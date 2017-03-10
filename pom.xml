@@ -7,19 +7,6 @@
     <groupId>groupId</groupId>
     <artifactId>Twetter</artifactId>
     <version>1.0-SNAPSHOT</version>
-
-  <servers>
-    <server>
-      <username>${security.getCurrentUsername()}</username>
-      <password>${security.getEscapedEncryptedPassword()!"*** Insert encrypted password here ***"}</password>
-      <id>central</id>
-    </server>
-    <server>
-      <username>${security.getCurrentUsername()}</username>
-      <password>${security.getEscapedEncryptedPassword()!"*** Insert encrypted password here ***"}</password>
-      <id>snapshots</id>
-    </server>
-  </servers>
   <profiles>
     <profile>
       <repositories>
